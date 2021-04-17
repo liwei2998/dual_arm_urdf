@@ -25,12 +25,6 @@
         <joint name="kong_wrist_2_joint" />
         <joint name="kong_wrist_3_joint" />
     </group>
-    <group name="kong_hand">
-        <joint name="soft_robot_joint_kong" />
-        <joint name="rigid_joint" />
-        <joint name="rigid_tip_joint" />
-        <joint name="soft_tip_joint" />
-    </group>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="kong_wrist_3_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="rigid_link" reason="Adjacent" />
