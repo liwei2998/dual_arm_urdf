@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="rigid_fixture">
+  <link
+    name="base_link1">
+    <inertial>
+      <origin
+        xyz="-1.38777878078145E-17 2.60208521396521E-18 0.00532796618497365"
+        rpy="0 0 0" />
+      <mass
+        value="0.0450313033863909" />
+      <inertia
+        ixx="1.71307951923897E-05"
+        ixy="4.33248175276399E-13"
+        ixz="-3.17528032255489E-14"
+        iyy="1.69375699894751E-05"
+        iyz="-8.77417821911473E-23"
+        izz="3.23625817577014E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rigid_fixture/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rigid_fixture/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="tip_link">
+    <inertial>
+      <origin
+        xyz="-0.0115649782410447 2.60208521396521E-18 -0.0473624878454751"
+        rpy="0 0 0" />
+      <mass
+        value="0.0505916721482552" />
+      <inertia
+        ixx="8.33145394803497E-05"
+        ixy="-6.80931792533148E-22"
+        ixz="-3.16098805111095E-06"
+        iyy="4.18098391237522E-05"
+        iyz="-5.02361476928065E-21"
+        izz="4.30035838862597E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rigid_fixture/meshes/tip_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rigid_fixture/meshes/tip_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rigid_fixture"
+    type="fixed">
+    <origin
+      xyz="0.013107 0 0.10568"
+      rpy="0 0 0" />
+    <parent
+      link="base_link1" />
+    <child
+      link="tip_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
